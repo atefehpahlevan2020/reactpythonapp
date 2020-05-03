@@ -1,10 +1,16 @@
 import React from 'react';
+import Login from './components/login';
+import { Container , Row, Col } from 'react-bootstrap';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h2>React & Python</h2>
-    </div>
+    <Container>
+      <Row>
+        <Col>
+          <Login />
+        </Col>
+      </Row>
+    </Container>
   );
 }
 export default App;
