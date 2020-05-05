@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
-import './../static/login.css'
+import './../static/login.css';
+import Signup from './Signup';
+import Dashboard from './Dashboard';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -29,9 +31,9 @@ const Login = () => {
         <Form.Group controlId="password">
           <Form.Label>Password</Form.Label>
           <Form.Control
+            type="password"
             value={password}
             onChange={e => setPassword(e.target.value)}
-            type="password"
           />
         </Form.Group>
         <br/>
